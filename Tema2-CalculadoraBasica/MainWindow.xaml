@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema2_CalculadoraBasica"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Calculadora Básica" Height="450" Width="800">
     <Grid>
+        <TextBox x:Name="casillaOperando1" HorizontalAlignment="Center" Margin="0,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="34" Width="132"/>
+        <TextBox x:Name="casillaOperando2" HorizontalAlignment="Center" Margin="0,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" FontSize="24" Height="34"/>
+        <TextBox x:Name="casillaOperador" TextChanged="casillaOperador_TextChanged" HorizontalAlignment="Center" Margin="0,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" FontSize="24" Height="34"/>
+        <TextBlock x:Name="casillaResultado" HorizontalAlignment="Center" Margin="0,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="110" Height="34"/>
+        <Button x:Name="botonCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="630,75,0,0" VerticalAlignment="Top" Height="30" Width="75" Click="BotonCalcular_Click"/>
+        <Button x:Name="botonLimpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="630,125,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="BotonLimpiar_Click"/>
+        <TextBlock x:Name="errorOperando1" HorizontalAlignment="Left" Margin="481,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock x:Name="errorOperando2" HorizontalAlignment="Left" Margin="481,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock x:Name="errorOperador" HorizontalAlignment="Left" Margin="481,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock x:Name="textoOperando1" HorizontalAlignment="Left" Margin="190,75,0,0" TextWrapping="Wrap" Text="Operando 1" VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock x:Name="textoOperando2" HorizontalAlignment="Left" Margin="190,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Text="Operando 2"/>
+        <TextBlock x:Name="textoOperador" HorizontalAlignment="Left" Margin="190,175,0,0" TextWrapping="Wrap" Text="Operador" VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock x:Name= "textoResultado" HorizontalAlignment="Left" Margin="190,225,0,0" TextWrapping="Wrap" Text="Resultado" VerticalAlignment="Top" FontSize="24"/>
+
 
     </Grid>
 </Window>
